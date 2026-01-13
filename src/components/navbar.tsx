@@ -11,18 +11,19 @@ export const Navbar = () => {
           href: '#',
         },
         {
-          title: 'Log in',
+          title: 'Login',
           href: '#',
         }
     ]
   return ( 
   <div className="navbar-root">
     <div className="logo">Fintech</div>
-    <div>
+    <div className="links">
         {links.map((link, idx) => ( 
-            <a key = {link.title} href={link.href}>{link.title}</a>
+            <a className="link-items" key = {link.title} href={link.href}>{link.title}</a>
     ) ) }
     </div>
+    <button className="btn">Start free trial</button>
   </div>
   );
 };
