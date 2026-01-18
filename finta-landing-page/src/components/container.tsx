@@ -22,7 +22,7 @@ export const Container = ({
   className?: string;
 }) => {
   console.log(className);
-  return <div className= {cn("max-w-7xl mx-auto px-4 md:py-8", className)}>
+  return <div className= {cn("mx-auto px-4 md:py-8 min-w-2xl max-w-7xl", className)}>
     {children}
     </div>;
 };
